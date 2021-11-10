@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: pink;
+}
+
+.back {
+    background-color: papayawhip;
+    transform: rotateY(180deg);
+}
