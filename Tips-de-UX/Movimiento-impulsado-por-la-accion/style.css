@@ -1,0 +1,18 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: aliceblue;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+    border-radius: 50%;
+    transition: transform 1.5s linear;
+}
+
+.container:hover .item{
+    transform: translate(200px ,0px);
+    transition: transform 1s linear;
+}
